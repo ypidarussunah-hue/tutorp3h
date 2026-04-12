@@ -762,6 +762,21 @@
   @media (max-width: 480px) {
     .wa-helpdesk { width: 50px; height: 50px; font-size: 24px; bottom: 15px; right: 15px; }
   }
+  /* Kode agar semua foto galeri seragam */
+.card img {
+    width: 100%;           /* Lebar penuh mengikuti kotak */
+    height: 200px;         /* Tentukan tinggi yang sama, misal 200px */
+    object-fit: cover;     /* Kuncinya di sini: Foto akan dipotong otomatis agar pas, tidak gepeng */
+    border-radius: 8px;    /* Agar sudutnya tetap melengkung rapi */
+    display: block;
+}
+
+/* Khusus untuk tampilan di HP agar tidak terlalu tinggi */
+@media (max-width: 480px) {
+    .card img {
+        height: 160px;     /* Tinggi sedikit dikurangi untuk layar HP */
+    }
+}
 </style>
 </head>
 <body>
