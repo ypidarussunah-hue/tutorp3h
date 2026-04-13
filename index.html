@@ -1799,50 +1799,77 @@ style="background: var(--green-dark); color: white; padding: 6px 12px; border-ra
 </div>
 
   <div id="tab-galeri" class="tab-content">
-  <div class="page-heading">
-    <h2>
-      <span class="icon-badge"><i class="fas fa-images"></i></span>
-      Galeri Edukasi & Contoh Produk
-    </h2>
-    <p>Pelajari visualisasi pendampingan lapangan dan jenis produk UMKM di bawah ini.</p>
-  </div>
+    <div class="page-heading">
+      <h2>
+        <span class="icon-badge"><i class="fas fa-images"></i></span>
+        Galeri Edukasi & Contoh Produk
+      </h2>
+      <p>Visualisasi pendampingan lapangan dan contoh produk UMKM untuk dipelajari.</p>
+    </div>
 
-  <div class="card">
-    <div class="card-title"><i class="fas fa-camera-retro"></i> Dokumentasi Pendampingan Lapangan</div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-      <img src="budi1.jpg" alt="Pendampingan 1" style="width:100%; border-radius:8px; border:1px solid #ddd;">
-      <img src="rahmat1.jpeg" alt="Pendampingan 2" style="width:100%; border-radius:8px; border:1px solid #ddd;">
-      <img src="budi2.jpg" alt="Pendampingan 3" style="width:100%; border-radius:8px; border:1px solid #ddd;">
-      <img src="rahmat2.jpeg" alt="Pendampingan 4" style="width:100%; border-radius:8px; border:1px solid #ddd;">
-      <img src="budi3.jpg" alt="Pendampingan 5" style="width:100%; border-radius:8px; border:1px solid #ddd;">
-      <img src="rahmat3.jpeg" alt="Pendampingan 6" style="width:100%; border-radius:8px; border:1px solid #ddd;">
-      <img src="budi4.jpeg" alt="Pendampingan 7" style="width:100%; border-radius:8px; border:1px solid #ddd;">
-      <img src="budi5.jpeg" alt="Pendampingan 8" style="width:100%; border-radius:8px; border:1px solid #ddd;">
-      <img src="s1.jpeg" alt="Sosialisasi di RT/RW" style="width:100%; border-radius:8px; border:1px solid #ddd;">
+    <div class="card">
+      <div class="card-title"><i class="fas fa-camera-retro"></i> Dokumentasi Pendampingan Lapangan</div>
+      <div class="gallery-grid">
+        <img src="budi1.jpg" alt="Pendampingan 1">
+        <img src="budi2.jpg" alt="Pendampingan 2">
+        <img src="budi3.jpg" alt="Pendampingan 3">
+        <img src="rahmat1.jpg" alt="Pendampingan 4">
+        <img src="rahmat2.jpg" alt="Pendampingan 5">
+        <img src="rahmat3.jpg" alt="Pendampingan 6">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><i class="fas fa-box-open"></i> Contoh Produk UMKM</div>
+      <div class="gallery-grid">
+        <div class="product-item">
+          <img src="p1.jpg" alt="Produk 1">
+          <small>Produk Kering</small>
+        </div>
+        <div class="product-item">
+          <img src="p2.jpg" alt="Produk 2">
+          <small>Minuman Botol</small>
+        </div>
+        <div class="product-item">
+          <img src="p3.jpg" alt="Produk 3">
+          <small>Makanan Olahan</small>
+        </div>
+        <div class="product-item">
+          <img src="s1.jpg" alt="Sosialisasi">
+          <small>Foto Sosialisasi</small>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title"><i class="fas fa-box-open"></i> Contoh Produk UMKM (Sihalal Ready)</div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px;">
-      <div style="text-align:center;">
-        <img src="p1.jpg" style="width:100%; border-radius:5px;">
-        <small>Sambal kemasan</small>
+  <div id="tab-unduh" class="tab-content">
+    <div class="page-heading">
+      <h2>
+        <span class="icon-badge"><i class="fas fa-folder-open"></i></span>
+        Pusat Unduhan & Tools P3H
+      </h2>
+      <p>Media visual dan link akses cepat sistem SIHALAL & OSS.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><i class="fas fa-map-signs"></i> Alur Kerja & KBLI</div>
+      <div style="text-align: center; margin-bottom: 15px;">
+        <img src="alur.jpg" alt="Alur Kerja" style="width: 100%; max-width: 400px; border-radius: 8px;">
       </div>
-      <div style="text-align:center;">
-        <img src="p2.jpg" style="width:100%; border-radius:5px;">
-        <small>Batagor</small>
-      </div>
-      <div style="text-align:center;">
-        <img src="p3.jpg" style="width:100%; border-radius:5px;">
-        <small>Pempek</small>
-        <div style="text-align:center;">
-        <img src="p4.jpeg" style="width:100%; border-radius:5px;">
-        <small>Onde-onde</small>
+      <a href="alur.jpg" download class="btn-yt" style="display: block; text-align: center; background: var(--green); color: white; text-decoration: none; padding: 10px; border-radius: 8px;">
+        <i class="fas fa-download"></i> Unduh Alur Kerja
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><i class="fas fa-toolbox"></i> Link Akses Cepat (Sistem)</div>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <a href="https://gmail.inputekno.com/" target="_blank" style="background:#4285f4; color:white; padding:10px; border-radius:8px; text-decoration:none; font-size:12px;">Email Generator</a>
+        <a href="https://oss.go.id/" target="_blank" style="background:#2c3e50; color:white; padding:10px; border-radius:8px; text-decoration:none; font-size:12px;">Website OSS</a>
+        <a href="https://ptsp.halal.go.id" target="_blank" style="background:var(--green); color:white; padding:10px; border-radius:8px; text-decoration:none; font-size:12px;">SIHALAL</a>
       </div>
     </div>
   </div>
-</div>
 </main>
 
 <!-- ════ FOOTER ════ -->
