@@ -29,13 +29,15 @@ content="https://tutorp3hdarussunah.netlify.app">
 content="Tutor P3H Darussunah">
 <style>
 :root {
-  --emerald:      #006633;
-  --emerald-dark: #004422;
-  --emerald-mid:  #008844;
-  --emerald-light:#e8f5ee;
+  --emerald:      #1B3A6B;
+  --emerald-dark: #0F2545;
+  --emerald-mid:  #2E5C99;
+  --emerald-light:#e9eef7;
   --gold:         #C9A84C;
   --gold-light:   #f7f0dd;
   --gold-dark:    #8a6a1f;
+  --brand-green:  #1E7B3E;
+  --brand-green-light: #e6f4ea;
   --white:        #ffffff;
   --off-white:    #f8f9f7;
   --gray-100:     #f3f4f6;
@@ -157,20 +159,20 @@ header{
 #tab-generator input[type=text]:focus,
 #tab-generator input[type=number]:focus,
 #tab-generator select:focus { outline:none; border-color:#1a472a; box-shadow:0 0 0 2px rgba(26,71,42,.12); }
-#tab-generator .btn-generate { height:36px; padding:0 20px; background:#006633; color:#fff; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:6px; white-space:nowrap; font-family:'Plus Jakarta Sans',sans-serif; }
-#tab-generator .btn-generate:hover { background:#004422; }
+#tab-generator .btn-generate { height:36px; padding:0 20px; background:#1B3A6B; color:#fff; border:none; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:6px; white-space:nowrap; font-family:'Plus Jakarta Sans',sans-serif; }
+#tab-generator .btn-generate:hover { background:#0F2545; }
 #tab-generator .btn-generate:disabled { opacity:.6; cursor:not-allowed; }
 #tab-generator .warning-box { background:#fffbeb; border:0.5px solid #f5c842; border-radius:8px; padding:.75rem 1rem; font-size:12px; color:#854f0b; margin-top:.75rem; display:none; line-height:1.5; }
 #tab-generator .g-stats-row { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:1rem; }
 #tab-generator .g-stat-card { background:#f3f4f6; border-radius:8px; padding:.75rem 1rem; text-align:center; }
-#tab-generator .g-stat-card .g-num { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:#006633; }
+#tab-generator .g-stat-card .g-num { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:#1B3A6B; }
 #tab-generator .g-stat-card .g-lbl { font-size:11px; color:#4b5563; margin-top:2px; }
 #tab-generator .results-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:.75rem; flex-wrap:wrap; gap:8px; }
 #tab-generator .g-btn-group { display:flex; gap:6px; flex-wrap:wrap; }
 #tab-generator .btn-sm-g { height:30px; padding:0 12px; border:0.5px solid #e5e7eb; border-radius:8px; font-size:12px; cursor:pointer; background:#ffffff; color:#1f2937; display:flex; align-items:center; gap:4px; font-family:'Plus Jakarta Sans',sans-serif; }
 #tab-generator .btn-sm-g:hover { background:#f3f4f6; }
-#tab-generator .btn-sm-g.green { background:#006633; color:#fff; border-color:#006633; }
-#tab-generator .btn-sm-g.green:hover { background:#004422; }
+#tab-generator .btn-sm-g.green { background:#1B3A6B; color:#fff; border-color:#1B3A6B; }
+#tab-generator .btn-sm-g.green:hover { background:#0F2545; }
 #tab-generator .email-list { max-height:320px; overflow-y:auto; border:0.5px solid #e5e7eb; border-radius:8px; }
 #tab-generator .email-row { display:flex; align-items:center; justify-content:space-between; padding:7px 12px; border-bottom:0.5px solid #e5e7eb; font-size:13px; font-family:'Courier New',monospace; transition:background .1s; }
 #tab-generator .email-row:last-child { border-bottom:none; }
@@ -186,13 +188,13 @@ header{
 #tab-generator .g-info-box strong { color:#1f2937; }
 #tab-generator .g-info-box code { background:#e5e7eb; padding:1px 5px; border-radius:4px; font-size:11px; }
 #tab-generator .dot-note { display:flex; gap:6px; align-items:flex-start; margin-top:6px; }
-#tab-generator .dot-note i { color:#006633; margin-top:1px; flex-shrink:0; }
+#tab-generator .dot-note i { color:#1B3A6B; margin-top:1px; flex-shrink:0; }
 #tab-generator .g-separator { border:none; border-top:0.5px solid #e5e7eb; margin:1rem 0; }
 #tab-generator .g-section-label { font-size:12px; font-weight:600; color:#4b5563; margin-bottom:6px; display:flex; align-items:center; gap:5px; }
 #tab-generator .g-step { display:flex; gap:8px; align-items:flex-start; margin-bottom:6px; }
-#tab-generator .g-step-num { background:#006633; color:#fff; border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:11px; flex-shrink:0; font-weight:700; }
+#tab-generator .g-step-num { background:#1B3A6B; color:#fff; border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:11px; flex-shrink:0; font-weight:700; }
 #tab-generator .g-step span { font-size:13px; color:#4b5563; line-height:1.65; }
-#tab-generator .g-toast { position:fixed; bottom:90px; right:20px; background:#006633; color:#fff; padding:10px 16px; border-radius:8px; font-size:13px; display:none; align-items:center; gap:6px; z-index:999; box-shadow:0 4px 18px rgba(0,102,51,.3); }
+#tab-generator .g-toast { position:fixed; bottom:90px; right:20px; background:var(--brand-green); color:#fff; padding:10px 16px; border-radius:8px; font-size:13px; display:none; align-items:center; gap:6px; z-index:999; box-shadow:0 4px 18px rgba(30,123,62,.3); }
 @keyframes g-spin { to { transform:rotate(360deg); } }
 
 /* ═══════════════════════════════════════
@@ -266,7 +268,7 @@ header{
   background:linear-gradient(135deg,var(--emerald),var(--emerald-mid));
   color:white;font-weight:700;font-size:14px;
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 3px 10px rgba(0,102,51,.3);flex-shrink:0;
+  box-shadow:0 3px 10px rgba(27,58,107,.3);flex-shrink:0;
 }
 .step-line{
   width:2px;background:linear-gradient(to bottom,var(--emerald-mid),var(--gray-200));
@@ -414,7 +416,7 @@ header{
   font-size:10px;font-weight:700;margin-top:2px;
 }
 .trouble-tip{
-  background:#f0fdf4;border:1px solid rgba(0,102,51,.2);
+  background:#eef3fa;border:1px solid rgba(27,58,107,.2);
   border-radius:6px;padding:8px 12px;
   font-size:12px;color:var(--emerald-dark);
   margin-top:8px;line-height:1.6;
@@ -517,9 +519,9 @@ header{
   animation:pulseBorder 3s infinite;
 }
 @keyframes pulseBorder{
-  0%{box-shadow:0 0 0 0 rgba(0,102,51,.3);}
-  70%{box-shadow:0 0 0 8px rgba(0,102,51,0);}
-  100%{box-shadow:0 0 0 0 rgba(0,102,51,0);}
+  0%{box-shadow:0 0 0 0 rgba(27,58,107,.3);}
+  70%{box-shadow:0 0 0 8px rgba(27,58,107,0);}
+  100%{box-shadow:0 0 0 0 rgba(27,58,107,0);}
 }
 .menu-box:hover{
   background:var(--emerald-light);border-color:var(--emerald);
@@ -563,7 +565,7 @@ header{
   background:linear-gradient(135deg,var(--emerald),var(--emerald-mid));
   border-radius:10px;
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  box-shadow:0 4px 10px rgba(0,102,51,.25);
+  box-shadow:0 4px 10px rgba(27,58,107,.25);
 }
 .icon-badge i{color:white;font-size:16px;}
 .page-heading p{
@@ -635,7 +637,7 @@ header{
 
 /* GALERI NOTICE */
 .galeri-notice{
-  background:linear-gradient(135deg,#e8f5ee,#f0faf4);
+  background:linear-gradient(135deg,#e9eef7,#f0faf4);
   border:1px dashed var(--emerald);
   border-radius:var(--radius);
   padding:16px 18px;margin-bottom:18px;
@@ -643,7 +645,7 @@ header{
 }
 .galeri-notice i{color:var(--emerald);font-size:15px;margin-top:2px;flex-shrink:0;}
 .galeri-notice p{font-size:12px;color:var(--emerald-dark);line-height:1.7;}
-.galeri-notice code{background:rgba(0,102,51,.1);padding:2px 7px;border-radius:4px;font-size:11px;font-family:monospace;}
+.galeri-notice code{background:rgba(27,58,107,.1);padding:2px 7px;border-radius:4px;font-size:11px;font-family:monospace;}
 
 /* ═══════════════════════════════════════
    SCENARIO / DIALOG
@@ -776,7 +778,7 @@ header{
   color:white;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   font-size:11px;font-weight:800;margin-top:1px;
-  box-shadow:0 2px 6px rgba(0,102,51,.3);
+  box-shadow:0 2px 6px rgba(27,58,107,.3);
 }
 .req-text strong{display:block;color:var(--emerald-dark);font-weight:700;font-size:12.5px;margin-bottom:2px;}
 .req-text span{color:var(--gray-600);font-size:12px;}
@@ -791,9 +793,9 @@ header{
 .pakta-card::before{
   content:'';position:absolute;top:-30px;right:-30px;
   width:120px;height:120px;border-radius:50%;
-  background:radial-gradient(circle,rgba(0,102,51,.06),transparent);
+  background:radial-gradient(circle,rgba(27,58,107,.06),transparent);
 }
-.pakta-header{text-align:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px dashed rgba(0,102,51,.3);}
+.pakta-header{text-align:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px dashed rgba(27,58,107,.3);}
 .pakta-header .arabic{font-family:'Amiri',serif;font-size:24px;color:var(--emerald-dark);margin-bottom:8px;}
 .pakta-header h3{font-size:15px;font-weight:800;color:var(--emerald-dark);text-transform:uppercase;letter-spacing:1.5px;}
 .pakta-header p{font-size:12px;color:var(--gray-600);margin-top:4px;}
@@ -809,7 +811,7 @@ header{
 
 .signature-area{
   display:grid;grid-template-columns:1fr 1fr;gap:20px;
-  margin-top:20px;border-top:1px dashed rgba(0,102,51,.3);padding-top:18px;
+  margin-top:20px;border-top:1px dashed rgba(27,58,107,.3);padding-top:18px;
 }
 .sig-box{text-align:center;}
 .sig-box p{font-size:11px;color:var(--gray-600);margin-bottom:4px;}
@@ -848,7 +850,7 @@ header{
   text-decoration:none;font-size:11px;font-weight:700;
   transition:all .2s;white-space:nowrap;flex-shrink:0;
 }
-.btn-download:hover{background:var(--emerald);box-shadow:0 2px 10px rgba(0,102,51,.3);}
+.btn-download:hover{background:var(--emerald);box-shadow:0 2px 10px rgba(27,58,107,.3);}
 
 .quick-link-btn{
   display:inline-flex;align-items:center;gap:8px;
@@ -1672,7 +1674,7 @@ footer{
   <div class="card">
     <div class="card-title"><i class="fas fa-toolbox"></i> Tools &amp; Link Pendukung P3H</div>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
-      <a onclick="showTab('generator', document.querySelector('.nav-tab:nth-child(8)'))" class="quick-link-btn" style="background:#006633;color:white;cursor:pointer;"><i class="fas fa-at"></i> Email Generator</a>
+      <a onclick="showTab('generator', document.querySelector('.nav-tab:nth-child(8)'))" class="quick-link-btn" style="background:#1B3A6B;color:white;cursor:pointer;"><i class="fas fa-at"></i> Email Generator</a>
       <a href="https://ptsp.halal.go.id" target="_blank" class="quick-link-btn" style="background:var(--emerald);color:white;"><i class="fas fa-globe"></i> SIHALAL / PTSP Halal</a>
       <a href="#" class="quick-link-btn" style="background:var(--gold);color:var(--emerald-dark);"><i class="fas fa-file-excel"></i> Template Database PU</a>
     </div>
@@ -1908,7 +1910,7 @@ footer{
   <div class="card">
     <div class="card-title"><i class="fas fa-link" style="color:var(--emerald);"></i> 4. Link Akses Cepat — Sistem Resmi</div>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
-      <a onclick="showTab('generator', document.querySelector('.nav-tab:nth-child(8)'))" class="quick-link-btn" style="background:#006633;color:white;cursor:pointer;"><i class="fas fa-at"></i> Email Generator</a>
+      <a onclick="showTab('generator', document.querySelector('.nav-tab:nth-child(8)'))" class="quick-link-btn" style="background:#1B3A6B;color:white;cursor:pointer;"><i class="fas fa-at"></i> Email Generator</a>
       <a href="https://oss.go.id/" target="_blank" class="quick-link-btn" style="background:#2c3e50;color:white;"><i class="fas fa-external-link-alt"></i> Website OSS</a>
       <a href="https://ptsp.halal.go.id" target="_blank" class="quick-link-btn" style="background:var(--emerald);color:white;"><i class="fas fa-globe"></i> SIHALAL / PTSP</a>
       <a href="#" class="quick-link-btn" style="background:var(--gold);color:var(--emerald-dark);"><i class="fas fa-file-excel"></i> Template Database</a>
@@ -2160,7 +2162,7 @@ footer{
     <p>Panduan lengkap bagi P3H untuk mendampingi pelaku usaha dari login hingga sertifikat halal terbit — berdasarkan sistem ptsp.halal.go.id terkini.</p>
   </div>
 
-  <div class="card" style="margin-bottom:16px;background:linear-gradient(135deg,#e8f5ee,#f0fdf4);border:1px solid rgba(0,102,51,.2);">
+  <div class="card" style="margin-bottom:16px;background:linear-gradient(135deg,#e9eef7,#eef3fa);border:1px solid rgba(27,58,107,.2);">
     <div style="display:flex;gap:12px;align-items:flex-start;">
       <div style="font-size:22px;flex-shrink:0;">📋</div>
       <div>
@@ -2441,7 +2443,7 @@ footer{
     <div class="flow-arrow">↓</div>
 
     <div class="flow-node">
-      <div class="flow-node-icon" style="background:#f0fdf4;color:var(--emerald);"><i class="fas fa-laptop"></i></div>
+      <div class="flow-node-icon" style="background:#eef3fa;color:var(--emerald);"><i class="fas fa-laptop"></i></div>
       <div class="flow-node-content">
         <div class="flow-node-step">TAHAP 3 — INTI</div>
         <div class="flow-node-title">Input Data di SIHALAL (ptsp.halal.go.id)</div>
@@ -2630,7 +2632,7 @@ footer{
     </div>
   </div>
 
-  <div class="card" style="margin-top:8px;background:var(--emerald-light);border:1px solid rgba(0,102,51,.2);">
+  <div class="card" style="margin-top:8px;background:var(--emerald-light);border:1px solid rgba(27,58,107,.2);">
     <div class="card-title"><i class="fas fa-phone-alt"></i> Kontak Helpdesk Resmi</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:12.5px;color:var(--gray-600);">
       <div><strong style="color:var(--emerald-dark);">📞 Call Center BPJPH</strong><br>1500-110 (jam kerja)</div>
