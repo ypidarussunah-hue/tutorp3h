@@ -1,0 +1,16 @@
+{
+  "name": "Tutor P3H DSN - LP3H Darussunah",
+  "short_name": "Tutor P3H DSN",
+  "description": "Portal edukasi, pendampingan, dan sumber daya untuk Pendamping Proses Produk Halal (P3H) LP3H Darussunah.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1B3A6B",
+  "icons": [
+    {
+      "src": "images/logo-lp3h.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

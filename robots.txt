@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tutorp3hdarussunah.example.com/sitemap.xml
